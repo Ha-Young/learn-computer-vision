@@ -12,7 +12,7 @@ window = cv2.namedWindow('cat', cv2.WINDOW_NORMAL)
 cv2.imshow('cat', image)
 
 while True:
-    if cv2.waitKey() == 27:
+    if cv2.waitKey() == ord('q'):
         break
 
 cv2.imwrite('cat_gray.png', image)
